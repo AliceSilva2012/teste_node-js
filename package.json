@@ -1,0 +1,10 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Alice Silva Pereira",
+  "license": "ISC",
+  "description": "Aprendendo node js do zero"
+}
