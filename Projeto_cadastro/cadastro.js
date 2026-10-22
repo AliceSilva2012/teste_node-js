@@ -1,0 +1,1 @@
+console.log('Bem-vindo(a) ao nosso sistema de cadastro!');
