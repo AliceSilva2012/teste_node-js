@@ -6,10 +6,9 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+[![Node.js CI](https://github.com/AliceSilva2012/teste_node-js/actions/workflows/node.js.yml/badge.svg)](https://github.com/AliceSilva2012/teste_node-js/actions/workflows/node.js.yml)
 
 > Uma aplicação interativa via linha de comando (CLI) desenvolvida em Node.js com Orientação a Objetos, automação de testes com GitHub Actions e integração contínua (CI).
-
-[![Node.js CI](https://github.com/AliceSilva2012/teste_node-js/actions/workflows/node.js.yml/badge.svg)](https://github.com/AliceSilva2012/teste_node-js/actions/workflows/node.js.yml)
 
 ---
 
