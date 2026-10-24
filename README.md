@@ -73,3 +73,35 @@ Caso queira clonar o projeto e rodar o código diretamente na sua máquina, siga
 1. **Clone este repositório:**
    ```bash
    git clone https://github.com/AliceSilva2012/teste_node-js.git
+   ```
+
+2. **Acesse a pasta do projeto:**
+   ```bash
+   cd teste_node-js
+   ```
+
+3. **Instale as dependências (se houver)**
+   ```bash
+   npm install
+   ```
+
+3. **Execute a aplicação:**
+   ```bash
+   node index.js
+   ```
+
+   ---
+
+   graph TD
+    A[teste_node-js] --> B[.github/workflows/node.js.yml]
+    A --> C[index.js]
+    A --> D[person.js]
+    A --> E[package.json]
+    A --> F[package-lock.json]
+
+    style B fill:#2088ff,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#f7df1e,stroke:#333,stroke-width:2px,color:#000
+    style D fill:#f7df1e,stroke:#333,stroke-width:2px,color:#000
+    style E fill:#6da55f,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#6da55f,stroke:#fff,stroke-width:2px,color:#fff
+
