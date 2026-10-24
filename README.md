@@ -1,4 +1,4 @@
-# Teste Node.js 🚀🤖
+# Conversa com terminal🚀🤖
 
 <img width="775" height="250" alt="image" src="https://github.com/user-attachments/assets/26aaef64-456e-4a42-8b1e-7022b3e230d0" />
 
@@ -13,7 +13,7 @@
 
 ## 💻 Sobre o Projeto
 
-O projeto **Teste Node.js** (`teste_node-js`) é uma aplicação interativa criada para explorar conceitos fundamentais do ecossistema Node.js. A aplicação solicita dados dinâmicos ao usuário através do terminal, instancia objetos reutilizáveis através de classes JavaScript e executa fluxos interativos de boas-vindas.
+O projeto **Conversa com terminal** (`teste_node-js`) é uma aplicação interativa criada para explorar conceitos fundamentais do ecossistema Node.js. A aplicação solicita dados dinâmicos ao usuário através do terminal, instancia objetos reutilizáveis através de classes JavaScript e executa fluxos interativos de boas-vindas.
 
 Além da lógica de backend, o projeto conta com integração contínua configurada via **GitHub Actions** (`node.js.yml`), garantindo que o código seja validado e executado automaticamente em múltiplas versões do Node.js (18.x, 20.x e 22.x) a cada `push` ou `pull request`.
 
