@@ -9,6 +9,8 @@
 
 > Uma aplicação interativa via linha de comando (CLI) desenvolvida em Node.js com Orientação a Objetos, automação de testes com GitHub Actions e integração contínua (CI).
 
+[![Node.js CI](https://github.com/AliceSilva2012/teste_node-js/actions/workflows/node.js.yml/badge.svg)](https://github.com/AliceSilva2012/teste_node-js/actions/workflows/node.js.yml)
+
 ---
 
 ## 💻 Sobre o Projeto
