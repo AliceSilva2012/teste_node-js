@@ -81,7 +81,7 @@ Caso queira clonar o projeto e rodar o código diretamente na sua máquina, siga
    npm install
    ```
 
-3. **Execute a aplicação:**
+4. **Execute a aplicação:**
    ```bash
    node index.js
    ```
