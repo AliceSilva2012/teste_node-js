@@ -1,4 +1,4 @@
-# Conversa com terminal🚀🤖
+# Conversa com terminal 🚀🤖
 
 <img width="775" height="250" alt="image" src="https://github.com/user-attachments/assets/26aaef64-456e-4a42-8b1e-7022b3e230d0" />
 
