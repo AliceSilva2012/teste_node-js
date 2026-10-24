@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start:dev": "node index.js"
+    "start:dev": "node index.js",
+    "test": "echo \"Sem testes automatizados configurados por enquanto.\""
   },
   "keywords": [],
   "author": "Alice Silva Pereira",
