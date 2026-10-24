@@ -88,6 +88,8 @@ Caso queira clonar o projeto e rodar o código diretamente na sua máquina, siga
 
    ---
 
+   
+```mermaid
    graph TD
     A[teste_node-js] --> B[.github/workflows/node.js.yml]
     A --> C[index.js]
@@ -100,4 +102,4 @@ Caso queira clonar o projeto e rodar o código diretamente na sua máquina, siga
     style D fill:#f7df1e,stroke:#333,stroke-width:2px,color:#000
     style E fill:#6da55f,stroke:#fff,stroke-width:2px,color:#fff
     style F fill:#6da55f,stroke:#fff,stroke-width:2px,color:#fff
-
+```
