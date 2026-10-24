@@ -88,6 +88,7 @@ Caso queira clonar o projeto e rodar o código diretamente na sua máquina, siga
 
    ---
 
+## 📁 Estrutura do Arquivo
    
 ```mermaid
    graph TD
