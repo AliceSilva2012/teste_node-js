@@ -1,5 +1,7 @@
 # Teste Node.js 🚀🤖
 
+<img width="775" height="250" alt="image" src="https://github.com/user-attachments/assets/26aaef64-456e-4a42-8b1e-7022b3e230d0" />
+
 ![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
