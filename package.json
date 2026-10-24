@@ -2,7 +2,9 @@
   "name": "javascript",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start:dev": "node index.js"
+  },
   "keywords": [],
   "author": "Alice Silva Pereira",
   "license": "ISC",
