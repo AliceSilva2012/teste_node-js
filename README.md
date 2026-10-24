@@ -55,12 +55,6 @@ Abaixo está o formato de como os dados são processados e manipulados durante a
 
 ---
 
-## 🌐 Repositório do Projeto
-
-- **GitHub:** [VEJA ESTE PROJETO NO GITHUB!](https://github.com/AliceSilva2012/teste_node-js)
-
----
-
 ## 🚀 Como Executar o Projeto Localmente
 
 Caso queira clonar o projeto e rodar o código diretamente na sua máquina, siga os passos abaixo:
