@@ -36,9 +36,9 @@ Abaixo está o formato de como os dados são processados e manipulados durante a
 | :--- | :--- | :--- |
 | **Entrada do Nome** | `index.js` (`readline`) | `"Qual é o seu nome?"` |
 | **Instanciação** | `person.js` | `const pessoa = new Person(respostaNome);` |
-| **Execução de Método** | `Person.sayName()` | `"Olá, Alice!"` |
+| **Execução de Método** | `Person.sayName()` | `"Olá, John Doe!"` |
 | **Entrada da Idade** | `index.js` (`readline`) | `"Qual é a sua idade?"` |
-| **Mensagem Final** | Console | `"Bem-vindo(a) ao nosso sistema operacional, Alice!"` |
+| **Mensagem Final** | Console | `"Bem-vindo(a) ao nosso sistema operacional, John Doe!"` |
 
 ---
 
