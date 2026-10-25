@@ -77,12 +77,7 @@ Caso queira clonar o projeto e rodar o código diretamente na sua máquina, siga
    cd teste_node-js
    ```
 
-3. **Instale as dependências (se houver)**
-   ```bash
-   npm install
-   ```
-
-4. **Execute a aplicação:**
+3. **Execute a aplicação:**
    ```bash
    node index.js
    ```
@@ -92,7 +87,7 @@ Caso queira clonar o projeto e rodar o código diretamente na sua máquina, siga
 ## 📁 Estrutura do Arquivo
    
 ```mermaid
-   graph TD
+graph TD
     A[teste_node-js] --> B[.github/workflows/node.js.yml]
     A --> C[index.js]
     A --> D[person.js]
