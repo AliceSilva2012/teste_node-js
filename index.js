@@ -20,8 +20,7 @@ terminal.question('Qual é o seu nome? ', (respostaNome) => {
     console.log(pessoa.sayName());   
 
     terminal.question('Qual é a sua idade? ', (respostaIdade) => {
-        // O SERVIDOR PEGA A MENSAGEM LIVRE E EXTRAI APENAS OS NÚMEROS:
-        // O código abaixo apaga tudo o que NÃO for número
+        // extrai só o que for número e depois faz o tratamento de erro
         const idadeApenasNumeros = respostaIdade.replace(/\D/g, '');
 
         // Caso o usuário não digite nenhum número (ex: "trinta" ou "sei lá")
