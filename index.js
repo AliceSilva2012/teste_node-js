@@ -21,7 +21,7 @@ terminal.question('Qual é o seu nome? ', (respostaNome) => {
 
     terminal.question('Qual é a sua idade? ', (respostaIdade) => {
         // extrai só o que for número e depois faz o tratamento de erro
-        const idadeApenasNumeros = respostaIdade.replace(/\D/g, '');
+        const idadeNumero = respostaIdade.replace(/\D/g, '');
 
         // Caso o usuário não digite nenhum número (ex: "trinta" ou "sei lá")
         if (!idadeNumero) {
