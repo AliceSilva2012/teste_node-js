@@ -19,11 +19,21 @@ terminal.question('Qual é o seu nome? ', (respostaNome) => {
     // Chama o método sayName() da classe Person lá do outro arquivo e faz a coisa acontecer
     console.log(pessoa.sayName());   
 
-    terminal.question('Qual é a sua idade? ', (resposta) => {
-        console.log(`Que daora, você tem ${resposta} anos de idade.`);
-        
+    terminal.question('Qual é a sua idade? ', (respostaIdade) => {
+        // O SERVIDOR PEGA A MENSAGEM LIVRE E EXTRAI APENAS OS NÚMEROS:
+        // O código abaixo apaga tudo o que NÃO for número
+        const idadeApenasNumeros = respostaIdade.replace(/\D/g, '');
+
+        // Caso o usuário não digite nenhum número (ex: "trinta" ou "sei lá")
+        if (!idadeNumero) {
+            console.log('Não consegui encontrar nenhum número na sua resposta, ser humano.');
+            terminal.close();
+            return;
+        }
+
+        console.log(`Que daora, você tem ${idadeNumero} anos de idade.`);
+
         console.log(`Bem-vindo(a) ao nosso sistema operacional, ${respostaNome}!`);
         terminal.close();
-
     });
 });
