@@ -16,7 +16,7 @@
 
 O projeto **Conversa com terminal** (`teste_node-js`) é uma aplicação interativa criada para explorar conceitos fundamentais do ecossistema Node.js. A aplicação solicita dados dinâmicos ao usuário através do terminal, instancia objetos reutilizáveis através de classes JavaScript e executa fluxos interativos de boas-vindas.
 
-Além da lógica de backend, o projeto conta com integração contínua configurada via **GitHub Actions** (`node.js.yml`), garantindo que o código seja validado e executado automaticamente em múltiplas versões do Node.js (18.x, 20.x e 22.x) a cada `push` ou `pull request`.
+Além da lógica de back-end, o projeto conta com integração contínua configurada via **GitHub Actions** (`node.js.yml`), garantindo que o código seja validado e executado automaticamente em múltiplas versões do Node.js (18.x, 20.x e 22.x) a cada `push` ou `pull request`.
 
 ---
 
