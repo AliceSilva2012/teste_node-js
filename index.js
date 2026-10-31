@@ -8,7 +8,7 @@ const terminal = leituraLinha.createInterface ({ //configurações
 
 console.log('Olá ser humano!');
 terminal.question('Qual é o seu nome? ', (respostaNome) => {
-    // .trim() remove espaços antes e depois do texto
+    // .trim() remove os espaços antes e depois do texto
     if (!respostaNome.trim()) {
         console.log('Tem que digitar um nome válido, ser humano.');
         terminal.close();
