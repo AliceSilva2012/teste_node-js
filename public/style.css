@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh; /* Ocupa 100% da altura da tela */
+    display: flex; /* Centraliza o terminal na página */
+    align-items: center; /* Centraliza na vertical (no meio) */
+    justify-content: center; /* Centraliza na horizontal */
+    background-color: #0b0f19; /* Fundo escuro para combinar com o terminal */
+    padding: 20px;
+}
+
+.terminal {
+    width: 100%;
+    max-width: 800px;
+}
+
+.terminal-container {
+    width: 100%;
+    background: rgba(15, 15, 25, 0.92); 
+    border: 1px solid #334155; 
+    border-radius: 8px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    font-family: 'Fira Code', 'Courier New', monospace; 
+    overflow: hidden; /* Pro conteudo interno nao atravessar a borda */
+}
+
+.terminal-header {
+    background: #1e293b;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.terminal-botoes { /* Container para os botões de controle */
+    display: flex; /* Alinha os botões no eixo x */
+    gap: 8px; /* SEPAAAARAAAAAAA */
+}
+
+.dot { /* Transforma aqueles span naqueles círculos do mac */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* Dale cor */
+.vermelho { background: #ff5f56; }
+.amarelo  { background: #ffbd2e; }
+.verde    { background: #27c93f; }
+
+.terminal-titulo {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    left: 0;
+    pointer-events: none; 
+}
+
+.terminal-body {
+    padding: 20px;
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-height: 350px;
+    overflow-y: auto; /* Serve pra quando o conteúdo for maior que a altura máxima, aparecer uma barra de rolagem */
+}
+
+.boas-vindas {
+    color: #94a3b8;
+    margin-bottom: 12px;
+}
+
+.terminal-linha-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.prompt { /* Pra ficar estiloso */
+    color: #4ade80;
+    font-weight: bold;
+}
+
+/* AAAAAAAAAAAAA */
+#terminal-input {
+    background: transparent;
+    border: none;
+    outline: none; 
+    color: #f8fafc;
+    font-family: inherit; 
+    font-size: inherit;
+    width: 100%;
+}

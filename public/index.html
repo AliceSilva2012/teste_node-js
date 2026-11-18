@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>web terminal</title>
+</head>
+<body>
+    <main class="terminal">
+        <div class="terminal-container">    
+    <div class="terminal-header">
+        <div class="terminal-botoes">
+            <span class="dot vermelho"></span>
+            <span class="dot amarelo"></span>
+            <span class="dot verde"></span>
+        </div>
+        <span class="terminal-titulo">alice@portfolio:~ (bash)</span>
+    </div>
+    <div class="terminal-body" id="terminal-body">
+        <p class="boas-vindas">Olá ser humano!<br>Qual é o seu nome?</p>
+        <div id="terminal-saida"></div>
+        <div class="terminal-linha-input">
+            <span class="prompt">alice@dev:~$</span>
+            <input type="text" id="terminal-input" placeholder="Digite um comando..." autocomplete="off">
+        </div>
+    </div>
+</main>
+    <script src="script.js"></script>
+</body>
+</html>

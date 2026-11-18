@@ -9,5 +9,8 @@
   "keywords": [],
   "author": "Alice Silva Pereira",
   "license": "ISC",
-  "description": "Aprendendo node js do zero"
+  "description": "Aprendendo node js do zero",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
 }
