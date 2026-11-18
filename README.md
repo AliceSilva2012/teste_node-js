@@ -1,6 +1,6 @@
 # Conversa com terminal 🚀🤖
 
-<img width="849" height="399" alt="image" src="https://github.com/user-attachments/assets/03ec17be-bb13-41c3-b0c0-8e45fa7e944d" />
+<img width="836" height="417" alt="image" src="https://github.com/user-attachments/assets/43b22e91-b16f-4d29-990e-3bbbb7f18b94" />
 
 ![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
