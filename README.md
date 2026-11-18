@@ -1,69 +1,82 @@
 # Conversa com terminal 🚀🤖
 
-<img width="775" height="250" alt="image" src="https://github.com/user-attachments/assets/26aaef64-456e-4a42-8b1e-7022b3e230d0" />
+<img width="849" height="399" alt="image" src="https://github.com/user-attachments/assets/03ec17be-bb13-41c3-b0c0-8e45fa7e944d" />
 
 ![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 [![Node.js CI](https://github.com/AliceSilva2012/teste_node-js/actions/workflows/node.js.yml/badge.svg)](https://github.com/AliceSilva2012/teste_node-js/actions/workflows/node.js.yml)
 
-> Uma aplicação interativa via linha de comando (CLI) desenvolvida em Node.js com Orientação a Objetos, automação de testes com GitHub Actions e integração contínua (CI).
+> Uma aplicação interativa em Node.js com Orientação a Objetos que evoluiu de uma ferramenta de linha de comando (CLI) na **v1** para uma **interface visual de terminal no navegador (v2)** servida com Express.js.
 
 ---
 
 ## 💻 Sobre o Projeto
 
-O projeto **Conversa com terminal** (`teste_node-js`) é uma aplicação interativa criada para explorar conceitos fundamentais do ecossistema Node.js. A aplicação solicita dados dinâmicos ao usuário através do terminal, instancia objetos reutilizáveis através de classes JavaScript e executa fluxos interativos de boas-vindas.
+O projeto **Conversa com terminal** (`teste_node-js`) foi desenvolvido para praticar conceitos essenciais de back-end e integração full-stack com Node.js. Na **v2.0.0**, a lógica original de coleta e validação de dados (nome e idade) com a classe `Person` foi conectada a uma janela de terminal interativa no navegador construída com HTML, CSS e JavaScript.
 
-Além da lógica de back-end, o projeto conta com integração contínua configurada via **GitHub Actions** (`node.js.yml`), garantindo que o código seja validado e executado automaticamente em múltiplas versões do Node.js (18.x, 20.x e 22.x) a cada `push` ou `pull request`.
+Além disso, o repositório mantém a versão original via terminal (`index.js`) e conta com pipeline de integração contínua via **GitHub Actions** (`node.js.yml`), validando o código automaticamente nas versões 18.x, 20.x e 22.x do Node.js a cada `push` ou `pull request`.
 
 ---
 
 ## ⚙️ Funcionalidades
 
-- **Interação via Terminal (CLI):** Coleta de dados do usuário (nome e idade) diretamente pelo console usando a interface `readline` do Node.js.
-- **Orientação a Objetos (POO):** Criação e exportação da classe `Person` em módulo separado (`person.js`), permitindo a instanciação de objetos e execução do método `sayName()`.
-- **Validação de Inputs:** Tratamento de entradas do usuário com `.trim()` para evitar caracteres vazios ou incorretos.
-- **Integração Contínua (CI):** Workflow automatizado via GitHub Actions executando rotinas de verificação e compatibilidade de ambiente.
+- **Reinicialização da conversa:** permite iniciar novamente o fluxo de interação sem precisar atualizar a página.
+- **Servidor Express.js:** Entrega os arquivos estáticos da pasta `public/` e expõe rotas (`POST /api/nome` e `POST /api/idade`) que processam as entradas no back-end.
+- **Orientação a Objetos (POO):** Classe `Person` modularizada em `src/person.js`, responsável por instanciar o usuário e executar o método `sayName()`.
+- **Validação e Sanitização de Inputs:** Remoção de espaços extras com `.trim()` e extração exclusiva de dígitos numéricos na idade com Regex (`replace(/\D/g, '')`).
+- **Compatibilidade CLI (v1):** Mantém o modo clássico via linha de comando utilizando o módulo nativo `node:readline`.
+- **Integração Contínua (CI):** Verificação automatizada de build e execução via GitHub Actions.
 
 ---
 
-## 📊 Estrutura de Fluxo do Sistema
+## 🏗️ Arquitetura
 
-Abaixo está o formato de como os dados são processados e manipulados durante a execução do programa:
+O projeto utiliza uma arquitetura dividida em duas camadas principais:
+
+- **Front-end (`public/`):** responsável pela interface visual, interação com o usuário e comunicação com a API utilizando Fetch API.
+- **Back-end (`src/`):** responsável pelo processamento das requisições HTTP, validação dos dados e gerenciamento da lógica de negócio por meio da classe Person.
+
+---
+
+## 📊 Estrutura de Fluxo do Sistema 
+
+Abaixo está o caminho dos dados entre o navegador (`public/`) e o servidor Node.js (`src/`) durante a execução:
 
 | Etapa | Origem / Arquivo | Ação / Exemplo de Retorno |
 | :--- | :--- | :--- |
-| **Entrada do Nome** | `index.js` (`readline`) | `"Qual é o seu nome?"` |
-| **Instanciação** | `person.js` | `const pessoa = new Person(respostaNome);` |
-| **Execução de Método** | `Person.sayName()` | `"Olá, John Doe!"` |
-| **Entrada da Idade** | `index.js` (`readline`) | `"Qual é a sua idade?"` |
-| **Mensagem Final** | Console | `"Bem-vindo(a) ao nosso sistema operacional, John Doe!"` |
+| **1. Entrada do Nome** | `public/index.html` + `script.js` | Envia o nome digitado via `POST /api/nome` |
+| **2. Instanciação** | `src/server.js` + `src/person.js` | `const pessoa = new Person(respostaNome.trim());` |
+| **3. Saudação** | `Person.sayName()` | `"Olá, Alice!"` e pergunta `"Qual é a sua idade?"` |
+| **4. Entrada da Idade** | `public/script.js` | Envia a idade digitada via `POST /api/idade` |
+| **5. Validação Numérica** | `src/server.js` | Extrai os números com `replace(/\D/g, '')` |
+| **6. Mensagem Final** | Tela do Terminal | `"Bem-vindo(a) ao nosso sistema operacional, Alice!"` |
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Node.js:** Ambiente de execução JavaScript no lado do servidor.
+- **Node.js & Express.js:** Servidor HTTP, gerenciamento de rotas (`POST`), middlewares (`express.json` e `express.static`) e módulos CommonJS.
 - **JavaScript (ES6+):**
-  - Módulos CommonJS (`module.exports` e `require`).
-  - Classes e Construtores (`class Person`).
-  - Manipulação de Strings e Template Literals.
-  - Leitura e escrita interativa com o módulo nativo `readline`.
-- **GitHub Actions:** Pipeline de CI para validação automatizada de build e execução do projeto em diferentes versões do Node.js.
-- **Git & GitHub:** Controle de versão e hospedagem do código-fonte.
+  - Programação Orientada a Objetos (`class Person`).
+  - Requisições assíncronas no front-end (`fetch` com `async/await`).
+  - Manipulação do DOM (`createElement`, `appendChild`, eventos `keydown`).
+  - Expressões Regulares (Regex) e manipulação de strings.
+- **HTML5 & CSS3:** Estruturação semântica e layout de terminal estilizado com Flexbox.
+- **GitHub Actions:** Pipeline de CI para validação automatizada do projeto.
+- **Git & GitHub:** Controle de versão com branches (`main`, `v2`) e releases semânticas (`v1.0.0`, `v2.0.0`).
 
 ---
 
 ## 🚀 Como Executar o Projeto Localmente
 
-Caso queira clonar o projeto e rodar o código diretamente na sua máquina, siga os passos abaixo:
-
 ### Pré-requisitos
-- [Node.js](https://nodejs.org/) instalado na máquina (versão 18.x ou superior recomendada).
+- [Node.js](https://nodejs.org/) instalado (versão 18.x ou superior recomendada).
 - [Git](https://git-scm.com) instalado na máquina.
-- Um editor de código como o [VS Code](https://code.visualstudio.com/).
 
 ### ☕ Passo a Passo
 
@@ -77,26 +90,46 @@ Caso queira clonar o projeto e rodar o código diretamente na sua máquina, siga
    cd teste_node-js
    ```
 
-3. **Execute a aplicação:**
+3. **Instale as dependências (Express):**
+   ```bash
+   npm install
+   ```
+
+4. **Execute a versão Web (v2):**
+   ```bash
+   node src/server.js
+   ```
+
+5. **Acesse no navegador:**
+   ```bash
+   http://localhost:3000 
+   ```
+   **Opcional: Para executar a versão CLI (v1):**
    ```bash
    node index.js
    ```
 
-   ---
+## 📁 Estrutura de Pastas
 
-## 📁 Estrutura do Arquivo
-   
 ```mermaid
 graph TD
     A[teste_node-js] --> B[.github/workflows/node.js.yml]
-    A --> C[index.js]
-    A --> D[person.js]
-    A --> E[package.json]
-    A --> F[package-lock.json]
+    A --> C[public/]
+    A --> D[src/]
+    A --> E[index.js]
+    A --> F[package.json]
+    A --> G[.gitignore]
+
+    C --> C1[index.html]
+    C --> C2[style.css]
+    C --> C3[script.js]
+
+    D --> D1[server.js]
+    D --> D2[person.js]
 
     style B fill:#2088ff,stroke:#fff,stroke-width:2px,color:#fff
-    style C fill:#f7df1e,stroke:#333,stroke-width:2px,color:#000
-    style D fill:#f7df1e,stroke:#333,stroke-width:2px,color:#000
-    style E fill:#6da55f,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#e34f26,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#6da55f,stroke:#fff,stroke-width:2px,color:#fff
+    style E fill:#f7df1e,stroke:#333,stroke-width:2px,color:#000
     style F fill:#6da55f,stroke:#fff,stroke-width:2px,color:#fff
 ```
