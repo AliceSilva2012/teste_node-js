@@ -39,7 +39,7 @@ Além disso, o repositório mantém a versão original via terminal (`index.js`)
 O projeto utiliza uma arquitetura dividida em duas camadas principais:
 
 - **Front-end (`public/`):** responsável pela interface visual, interação com o usuário e comunicação com a API utilizando Fetch API.
-- **Back-end (`src/`):** responsável pelo processamento das requisições HTTP, validação dos dados e gerenciamento da lógica de negócio por meio da classe Person.
+- **Back-end (`src/`):** responsável pelo processamento das requisições HTTP, validação dos dados e gerenciamento da lógica de negócio por meio da classe `Person`.
 
 ---
 
@@ -109,7 +109,9 @@ Abaixo está o caminho dos dados entre o navegador (`public/`) e o servidor Node
    node index.js
    ```
 
-## 📁 Estrutura de Pastas
+---
+
+## 📁 Estrutura de Arquivos
 
 ```mermaid
 graph TD
