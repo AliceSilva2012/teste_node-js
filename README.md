@@ -101,6 +101,7 @@ Abaixo está o caminho dos dados entre o navegador (`public/`) e o servidor Node
    ```
 
 5. **Acesse no navegador:**
+   O link **HTTP** abaixo serve apenas de exemplo, o link real será dado no terminal do seu editor de código
    ```bash
    http://localhost:3000 
    ```
